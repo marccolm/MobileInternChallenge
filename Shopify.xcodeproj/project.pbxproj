@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F7E634040E1E26BFAAB9D27 /* Pods_Shopify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B93FBC1F0D4963D6FA16C9 /* Pods_Shopify.framework */; };
 		631A58DB21519A4C00EB5551 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A58DA21519A4C00EB5551 /* ProductListViewController.swift */; };
+		631A58E021519BB300EB5551 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A58DF21519BB300EB5551 /* ProductTableViewCell.swift */; };
 		6373B3BF2151575900333E66 /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373B3BE2151575900333E66 /* TagTableViewCell.swift */; };
 		63F5000E21503CDD002D20D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F5000D21503CDD002D20D5 /* AppDelegate.swift */; };
 		63F5001021503CDD002D20D5 /* TagListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F5000F21503CDD002D20D5 /* TagListViewController.swift */; };
@@ -21,7 +22,6 @@
 		63F5003E2150435B002D20D5 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F5003D2150435B002D20D5 /* Tools.swift */; };
 		63F500402150450C002D20D5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F5003F2150450C002D20D5 /* Product.swift */; };
 		63F500422150495A002D20D5 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F500412150495A002D20D5 /* Stock.swift */; };
-		63F50044215057D5002D20D5 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F50043215057D5002D20D5 /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +45,7 @@
 		41B93FBC1F0D4963D6FA16C9 /* Pods_Shopify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shopify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA6313B42044CCECC0741BD /* Pods-Shopify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shopify/Pods-Shopify.debug.xcconfig"; sourceTree = "<group>"; };
 		631A58DA21519A4C00EB5551 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		631A58DF21519BB300EB5551 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		6373B3BE2151575900333E66 /* TagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTableViewCell.swift; sourceTree = "<group>"; };
 		63F5000A21503CDD002D20D5 /* Shopify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F5000D21503CDD002D20D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		63F5003D2150435B002D20D5 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		63F5003F2150450C002D20D5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		63F500412150495A002D20D5 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
-		63F50043215057D5002D20D5 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		BF640F0965D51D6B5C993054 /* Pods-Shopify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shopify/Pods-Shopify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +115,6 @@
 			children = (
 				63F5003F2150450C002D20D5 /* Product.swift */,
 				63F500412150495A002D20D5 /* Stock.swift */,
-				63F50043215057D5002D20D5 /* Tag.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -127,6 +126,15 @@
 				63F5003D2150435B002D20D5 /* Tools.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		631A58E121519C3000EB5551 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				6373B3BE2151575900333E66 /* TagTableViewCell.swift */,
+				631A58DF21519BB300EB5551 /* ProductTableViewCell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 		63F5000121503CDD002D20D5 = {
@@ -158,7 +166,7 @@
 				631A58DC21519A5400EB5551 /* ViewControllers */,
 				631A58DD21519A7300EB5551 /* Classes */,
 				631A58DE21519A9700EB5551 /* Utilities */,
-				6373B3BE2151575900333E66 /* TagTableViewCell.swift */,
+				631A58E121519C3000EB5551 /* CustomCells */,
 				63F5001421503CDF002D20D5 /* Assets.xcassets */,
 				63F5001121503CDD002D20D5 /* Main.storyboard */,
 				63F5001621503CDF002D20D5 /* LaunchScreen.storyboard */,
@@ -373,8 +381,8 @@
 				63F500422150495A002D20D5 /* Stock.swift in Sources */,
 				63F5001021503CDD002D20D5 /* TagListViewController.swift in Sources */,
 				63F5003C2150414B002D20D5 /* UrlPaths.swift in Sources */,
-				63F50044215057D5002D20D5 /* Tag.swift in Sources */,
 				63F500402150450C002D20D5 /* Product.swift in Sources */,
+				631A58E021519BB300EB5551 /* ProductTableViewCell.swift in Sources */,
 				63F5000E21503CDD002D20D5 /* AppDelegate.swift in Sources */,
 				63F5003E2150435B002D20D5 /* Tools.swift in Sources */,
 			);
@@ -553,7 +561,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46FQ77HQPJ;
 				INFOPLIST_FILE = Shopify/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Marco.Shopify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -569,7 +580,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46FQ77HQPJ;
 				INFOPLIST_FILE = Shopify/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Marco.Shopify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -584,7 +598,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShopifyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Marco.ShopifyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -600,7 +618,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShopifyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Marco.ShopifyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -615,7 +637,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShopifyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Marco.ShopifyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -630,7 +656,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ShopifyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Marco.ShopifyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
