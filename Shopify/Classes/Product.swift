@@ -31,7 +31,7 @@ class Product{
      *            strings, id as an integer, image as a dictionary, an variants
      *            as an array of dictionaries.
      *
-     * - Returns: A custom product product.
+     * - Returns: A custom product.
      *
      */
     
