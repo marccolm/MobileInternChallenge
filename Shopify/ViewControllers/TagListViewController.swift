@@ -56,7 +56,7 @@ class TagListViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     /*
-     * Sets the selected tad and stock to the productListViewController
+     * Sets the selected tag and stock to the productListViewController
      * before performing the segue.
      *
      */
